@@ -2,9 +2,7 @@
 
 #include <iostream>
 #include<cmath>
-
 using namespace std;
-
 int reverse(int n){
     int ans =0;
     while(n>0){
@@ -14,8 +12,6 @@ int reverse(int n){
     }
     return ans;
 }
-
-
 int addbinary(int a, int b){
     int ans =0;
     int prevCarry =0;
@@ -68,9 +64,7 @@ int addbinary(int a, int b){
         }
         a/=10;
     }
-    
-    
-    while(b>0){
+       while(b>0){
         if(prevCarry == 1){
             ans =  ans*10 +0;
             prevCarry =1;
@@ -96,24 +90,20 @@ int addbinary(int a, int b){
         }
         b/=10;
     }
-    
     if(prevCarry == 1){
         ans =  ans*10 + 1;
     }
     ans = reverse(ans);
     return ans;
 }
-
-
-
 int main() {
     int a, b;
     std::cin >> a>> b;
-    
     std::cout <<addbinary(a,b);
-
 }
-                    Bit Manipulation
+
+	
+		Bit Manipulation
     
     Funcions::
     
